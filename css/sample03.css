@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    }
+    /* リストのリセット */
+    ul,ol{
+    list-style: none;
+    }
+    /* 画像のレスポンシブ対応 */
+    img{
+    width: 100%;
+    }
+    /* パララックススクロール用 */
+    html {
+    height: 100%;
+    overflow: hidden;
+    /* ブラウザ標準のスクロールバーを消します */
+    }
+    body {
+    overflow-y: scroll;
+    /* 縦スクロールバーを表示します。 */
+    overflow-x: hidden;
+    /* 横スクロールバーを消します。 */
+    height: 100%;
+}
+.image-base {
+min-height: 800px;
+/* 高さの最小値を決めることで高さを確保させます。*/
+background: url('../img/bg.jpg');
+/* 背景画像をフルスクリーンにフィットさせます */
+}
+/* パララックススクロール用// */
+/* ヘッダー */
+.site-header{
+border-bottom: 1px solid lightblue;
+}
+.logo{
+text-align: center;
+font-size: 3rem;
+margin: 2rem auto;
+}
+.header-nav{
+display: flex;
+justify-content: center;
+}
+.header-nav>li{
+width: 10rem;
+padding: 1rem;
+border: 1px solid lightskyblue;
+background: lightblue;
+text-align: center;
+color: blue;
+}
+/* ヘッダー// */
+/* サブメニュー */
+.sub-image{
+    display: flex;
+justify-content: center;
+animation: fadeIn 3s ease 0s 1 normal;
+}
+/* アニメーションタイミング */
+@keyframes fadeIn {
+0% {opacity: 0}
+30%{opacity: 0.3;}
+100% {opacity: 1}
+}
+.sub-image li{
+width:10rem;
+height: 10rem;
+margin: 2rem;
+overflow: hidden;
+border-radius: 50%;
+border: 2px solid lightskyblue;
+}
+
+/* メインコンテンツ */
+.main h1{
+font-size: 2rem;
+margin: 1rem;
+padding: 0.5rem;
+border-bottom: 1px solid lightblue;
+border-left: 0.5rem solid lightcoral;
+}
+/* 商品リスト */
+.item-list{
+display: flex;
+padding: 1rem;
+}
+.item{
+overflow: hidden;
+width: 20%;
+border-radius: 8px;
+box-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+position: relative;
+margin-bottom: 2rem;
+animation: slideIn 2s ease 0s 1 normal;
+}
+/* アニメーションタイミング */
+@keyframes slideIn {
+0% {margin-left:100%}
+100% {margin-left: 0}
+}
+.recommend{
+position: absolute;
+font-size: 3rem;
+color: yellow;
+top:0.5rem;
+right: 0;
+}
+.item-name{
+font-size: 1.5rem;
+font-weight: bold;
+margin: 1rem;
+border-bottom: 1px solid lightskyblue;
+}
+.item-price{
+margin: 1rem;
+text-align: right;
+}
+/* フッター */
+.site-footer{
+background: lightblue;
+padding: 2rem 1rem;
+text-align: center;
+}

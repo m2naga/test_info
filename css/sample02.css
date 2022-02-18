@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.site-header{
+    width: 100%;
+    background: lightblue;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+}
+.logo{
+    font-size: 2rem;
+    margin: 0.5rem 1rem;
+}
+.header-nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.header-nav>li{
+    width: 10rem;
+    padding: 1rem;
+    border: 1px solid lightskyblue;
+    background: lightblue;
+    text-align: center;
+    color: blue;
+}
+.sub-image{
+    margin: 4rem 1rem;
+    width: 15%;
+    float: left;
+}
+.sub-image li{
+    margin: 2rem;
+    overflow: hidden;
+    border: 2px solid lightskyblue;
+}
+.main{
+    float: left;
+    width: 80%;
+    margin: 4rem 1rem;
+}
+.main h1{
+    font-size: 2rem;
+    margin: 2rem 1rem;
+    padding: 0.5rem;
+    background: lightslategray;
+    color: #fff;
+}
+.item-list{
+    display: flex;
+    padding: 1rem;
+}
+.item{
+    overflow: hidden;
+    width: 25%;
+    border: 2px solid lightgray;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.item:hover{
+    opacity: 0.7;
+}
+.recommend{
+    float: right;
+    font-size: 1.5rem;
+    color: yellow;
+}
+.item-name{
+    float: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.item-price{
+    clear: both;
+    margin: 1rem;
+    text-align: right;
+}
+.site-footer{
+    clear: both;
+    background: lightblue;
+    padding: 2rem 1rem;
+    text-align: center;
+}
